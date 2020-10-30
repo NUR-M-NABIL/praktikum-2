@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Kursus</title>
+    <style>
+        #card {
+        height: 740px;
+        width: 800px;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+    <form action="" method="POST">
+        <fieldset style="background-color: blue;">
+        <br>
+        <h2>
+        <legend>Form Registrasi </legend>
+        </h2>
+        <br>
+        <table align="align">
+            <tr>
+                <td>Tanggal</td>
+                <td><input type="date" name="date" value="" required></td>
+            </tr>
+        </table>
+        <br><br>
+        <h2 style="font-family: sans-serif;">INFORMASI PRIBADI</h2>
+        <hr>
+        <table>
+            <tr>
+                <td><label>NAMA</label</td>
+                <td><input type="text" name="name" value="" style="width: 665px;" required></td>
+            </tr>
+            <tr>
+                <td><label>TANGGAL LAHIR</label></td>
+                <td><input type="date" name="birth" value="" style="width: 665px;" required></td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="font-family: sans-serif;">INFORMASI KONTAK</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>ALAMAT</td>
+                <td><input type="text" name="address" value="" style="width: 380px;"required></td>
+            </tr>
+            <tr>
+                <td>ASAL KOTA</td>
+                <td><input type="text" name="city" value="" required></td>
+                <td>PROVINSI</td>
+                <td><input type="text" name="state" value="" required></td>
+            </tr>
+            <tr>
+                <td>ZIP CODE</td>
+                <td><input type="number" name="zipcode" value=""></td>
+                <td>ASLA NEGARA</td>
+                <td><input type="text" name="country" value="" required></td>
+            </tr>
+            <tr>
+                <td>NO.TELP</td>
+                <td><input type="tel" name="phone" value="" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+                <td>EMAIL</td>
+                <td><input type="email" name="email" value="" required></td>
+            </tr>
+            <tr>
+                <td>KELAS</td>
+                <td>
+                    <input type="radio" name="member" value="regular pagi" required>Regular Pagi
+                    <input type="radio" name="member" value="regular sore" required>Regular Sore
+                    <input type="radio" name="member" value="weekend" required>Weekend
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="font-family: sans-serif;">DETAIL KURSUS</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>NAMA KURSUS</td>
+                <td><input type="text" name="course" value="" required></td>
+            </tr>
+            <tr>
+                <td>DETAIL PEMBAYARAN</td>
+                <td>
+                    <input type="radio" name="payment" value="cash" required>Tunai
+                    <input type="radio" name="payment" value="cheque" required>Cek 
+                    <input type="radio" name="payment" value="credit" required>Kredit
+                </td>
+            </tr>
+            <tr>
+                <td>ALASAN</td>
+                <td><input type="text" name="comments" value="" style="width: 665px;"></td>
+            </tr>
+        </table>
+        <br>
+        <footer>
+            <table>
+                <tr>
+                    <td>
+                        <textarea name="" id="" cols="53" rows="5" placeholder="TANDA TANGAN SISIWA"></textarea>
+                    </td>
+                    <td>
+                        <textarea name="" id="" cols="53" rows="5" placeholder="DIVALIDASI OLEH"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <center>
+                <input type="submit" value="Daftar" width="200px" height="100">
+            </center>
+        </footer>
+    </form>
+    </div>
+</body>
+</html>
